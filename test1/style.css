@@ -1,0 +1,16 @@
+legend{
+    color:red;
+}
+fieldset{
+    width: 375px;
+}
+input{
+    width: 360px;
+}
+span{
+    margin-left: 3px;
+    color: red;
+}
+#submit{
+    margin-top: 20px;
+}
