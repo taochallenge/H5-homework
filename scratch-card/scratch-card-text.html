@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刮刮卡-可变文字</title>
+    <style>
+        #box{
+            position: relative;
+            width: 500px;
+            height: 250px;
+            margin: 0 auto;
+            border: 2px solid #258AD1;
+            border-radius: 5px;
+        }
+        #text{
+            position: absolute;
+            width: 500px;
+            height: 250px;
+            line-height: 250px;
+            font-size: 90px;
+            text-align: center;
+            color: #B62223;
+        }
+        #canvas{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="text"></div>
+        <canvas id="canvas" width="500" height="250"></canvas>
+    </div>
+</body>
+<script>
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    var text = document.getElementById("text");
+    var box = document.getElementById("box");
+
+    //绘制文字层
+    var prize = ["一等奖","二等奖","三等奖","谢谢惠顾"];
+    var num = Math.floor(Math.random()*4);
+    text.innerHTML = prize[num];
+
+    //绘制遮罩层
+    context.fillStyle = "#837D7D";
+    context.fillRect(0,0,500,250);
+    context.fill();
+    
+    //绘制圆形
+    context.globalCompositeOperation = "destination-out";
+    var drawCircle = function(e){
+        var mouseX = e.layerX;//当前位置距离canvas左侧的距离
+        var mouseY = e.layerY;//当前位置距离canvas顶部的距离
+        context.beginPath();
+        context.fillStyle = "white";
+        context.arc(mouseX,mouseY,30,0,2*Math.PI);
+        context.fill();
+        context.closePath();
+    }
+
+    //判断遮罩层区域是否满足题意并清空遮罩层
+    function clear(){  
+        var s = canvas.width*canvas.height; //矩形区域总的像素点个数
+        var imgData = context.getImageData(0,0,500,250);
+        var sum = 0;
+        for(var i=3; i<imgData.data.length; i+=4){
+            if(imgData.data[i]==0){
+                sum++;  //统计像素点透明度为0的像素个数
+            }
+        }
+        
+        var percent = sum/s*100 + '%';//获得涂抹区域百分比
+        if(parseFloat(percent) >= 60){
+            context.clearRect(0,0,500,250); //清空遮罩层
+        }
+    }
+
+    var flag = 0;//判断鼠标按下还是抬起的标志
+    canvas.onmousedown = function(e){
+        flag = 1;
+        drawCircle(e);
+        clear();
+    }
+    canvas.onmousemove = function(e){
+        if(flag == 1){
+            drawCircle(e);
+        }
+        clear();
+    }
+    canvas.onmouseup = function(){
+        flag = 0;
+    }
+    
+</script>
+</html>
