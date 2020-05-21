@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片墙</title>
+    <style>
+        body{
+            background: url(images/bg3.JPG);
+        }
+        img{
+            height: 120px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        div{
+            float: left;
+            padding: 10px 10px 15px;
+            background-color: #fff;
+            margin: 20px 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            transition: transform 0.2s linear;
+        }
+        div:first-child{
+            transform: rotate(-5deg);
+        }
+        div:nth-child(2){
+            transform: rotate(2deg);
+        }
+        div:nth-child(3){
+            transform: rotate(-8deg);
+        }
+        div:nth-child(4){
+            transform: rotate(7deg);
+        }
+        div:nth-child(5){
+            transform: rotate(-4deg);
+        }
+        div:last-child{
+            transform: rotate(6deg);
+        }
+        div:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div><img src="images/11.jpg" title="相识">相识</div> 
+    <div><img src="images/22.JPG" title="凝视">凝视</div>
+    <div><img src="images/33.JPG" title="甜睡">甜睡</div>
+    <div><img src="images/44.JPG" title="逗乐">逗乐</div>
+    <div><img src="images/55.JPG" title="奔跑">奔跑</div>
+    <div><img src="images/66.JPG" title="漠视">漠视</div>
+</body>
+</html>
