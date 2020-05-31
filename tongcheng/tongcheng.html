@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>同程旅游</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header-wrap {
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .nav {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        #logo {
+            margin-top: 10px;
+        }
+
+        .nav-list {
+            width: 800px;
+            float: right;
+        }
+
+        .nav-list a {
+            color: #000;
+            text-align: center;
+            display: block;
+            float: left;
+            width: 160px;
+            height: 70px;
+            font-size: 20px;
+        }
+
+        .nav-list a:hover {
+            color: orange;
+            border-bottom: 3px solid orange;
+        }
+
+        .body-wrap {
+            height: 600px;
+            background-color: #ddd;
+        }
+
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .big,
+        .little {
+            padding-top: 20px;
+        }
+
+        .little {
+            position: absolute;
+            top: 0;
+            left: 400px;
+        }
+
+        #big {
+            position: relative;
+        }
+
+        #text {
+            position: absolute;
+            bottom: 0;
+            width: 398px;
+            height: 73px;
+            line-height: 73px;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-size: 20px;
+            text-indent: 38px;
+            color: #fff;
+        }
+
+        #num1 {
+            font-size: 30px;
+        }
+
+        #little1,#little2,#little3,#little4 {
+            position: relative;
+            float: left;
+        }
+
+        #little1,#little3 {
+            margin-right: 4px;
+        }
+
+        #little1,#little2 {
+            margin-bottom: 4px;
+        }
+
+        #little-text {
+            position: absolute;
+            bottom: 0;
+            height: 47px;
+            width: 398px;
+            line-height: 47px;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            text-indent: 38px;
+            color: #fff;
+        }
+
+        #num2 {
+            font-size: 26px;
+        }
+
+        .bottom-wrap {
+            height: 120px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .bottom {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            line-height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div class="nav">
+            <img id="logo" src="img/logotc.png" alt="这是logo">
+            <div class="nav-list">
+                <a href="#">首页</a>
+                <a href="#">热门路线</a>
+                <a href="#">签证推荐</a>
+                <a href="#">酒店预订</a>
+                <a href="#">使命愿景</a>
+            </div>
+        </div>
+    </div>
+    <div class="body-wrap">
+        <div class="main">
+            <div id="big">
+                <img class="big" src="img/visa1.jpg">
+                <div id="text">日本旅游签证&nbsp;&nbsp;<span id="num1">￥420</span>/人</div>
+            </div>
+            <div class="little">
+                <div id="little1">
+                    <img src="img/visa2.jpg">
+                    <div id="little-text">新加坡旅游签证&nbsp;&nbsp;<span id="num2">￥370</span>/人</div>
+                </div>
+                <div id="little2">
+                    <img src="img/visa3.jpg">
+                    <div id="little-text">马来西亚旅游签证&nbsp;&nbsp;<span id="num2">￥450</span>/人</div>
+                </div>
+                <div id="little3">
+                    <img src="img/visa4.jpg">
+                    <div id="little-text">申根旅游签证&nbsp;&nbsp;<span id="num2">￥999</span>/人</div>
+                </div>
+                <div id="little4">
+                    <img src="img/visa5.jpg">
+                    <div id="little-text">美国旅游签证&nbsp;&nbsp;<span id="num2">￥1380</span>/人</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-wrap">
+        <div class="bottom">
+            苏ICP备000号、2014-2017版权所有
+        </div>
+    </div>
+</body>
+
+</html>

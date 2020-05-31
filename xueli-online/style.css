@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-wrap {
+    background-color: rgb(243, 245, 247);
+    height: 100px;
+}
+
+.header {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgb(0, 164, 255);
+    font-weight: bold;
+}
+
+.nav {
+    padding-top: 34px;
+    position: absolute;
+    left: 250px;
+    top: 0;
+}
+
+.nav a {
+    height: 38px;
+    display: inline-block;
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+    margin-right: 28px;
+    text-align: center;
+}
+
+.index,
+.course {
+    width: 54px;
+}
+
+.profession {
+    width: 92px;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid rgb(0, 164, 255);
+}
+
+.search {
+    width: 360px;
+    height: 38px;
+    position: absolute;
+    top: 30px;
+    left: 686px;
+    border: 2px solid rgb(0, 164, 255);
+    background-color: rgb(243, 245, 247);
+    font-size: 14px;
+    color: rgb(191, 191, 191);
+    text-indent: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 1050px;
+    height: 42px;
+    width: 40px;
+    background-color: rgb(0, 164, 255);
+    text-align: center;
+}
+
+.button img {
+    padding-top: 10px;
+}
+
+.person {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    position: absolute;
+    top: 36px;
+    right: 20px;
+}
+
+.banner-wrap {
+    background-color: rgb(28, 3, 108);
+}
+
+.banner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    top: 0;
+    width: 170px;
+    height: 420px;
+    background-color: rgb(19, 1, 75);
+}
+
+.list a {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.list a:hover {
+    color: rgb(0, 164, 255);
+}
+
+.list span {
+    position: absolute;
+    right: 15px;
+}
+
+.body-wrap {
+    height: 1527px;
+    background-color: rgb(243, 245, 247);
+}
+
+.body {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.link {
+    position: absolute;
+    top: 8px;
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#type {
+    padding-top: 20px;
+}
+
+#type a {
+    display: inline-block;
+    color: black;
+    width: 110px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#type a:hover {
+    color: rgb(0, 164, 255);
+}
+
+#first {
+    padding-left: 34px;
+}
+
+#t {
+    border-left: 1px solid rgb(191, 191, 191);
+    text-align: center;
+}
+
+#change {
+    color: rgb(0, 164, 255);
+    font-size: 13px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.introduce {
+    position: absolute;
+    top: 108px;
+    font-size: 20px;
+}
+
+#see {
+    font-size: 13px;
+    color: rgb(177, 177, 177);
+    position: absolute;
+    top: 108px;
+    right: 30px;
+}
+
+.box {
+    position: absolute;
+    top: 150px;
+}
+
+.box>a {
+    display: block;
+    float: left;
+    height: 270px;
+    position: relative;
+}
+
+#image {
+    margin-right: 15px;
+}
+
+.text {
+    background-color: white;
+    height: 116px;
+}
+
+#text {
+    width: 190px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 25px;
+    color: black;
+}
+
+#text-bottom {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+#advance {
+    color: rgb(255, 124, 45);
+}
+
+#number {
+    color: rgb(153, 153, 153);
+}
+
+.box2 {
+    position: absolute;
+    top: 450px;
+}
+
+.box2>a {
+    display: block;
+    float: left;
+}
+
+.font {
+    font-size: 20px;
+    position: absolute;
+    top: 750px;
+}
+
+.level {
+    position: absolute;
+    top: 750px;
+    left: 432px;
+}
+
+.level a {
+    margin-right: 68px;
+    color: rgb(134, 134, 134);
+}
+
+.level a:hover {
+    color: rgb(0, 164, 255);
+}
+
+#all {
+    font-size: 13px;
+    color: rgb(177, 177, 177);
+    position: absolute;
+    top: 750px;
+    right: 30px;
+}
+
+.box3 {
+    position: absolute;
+    top: 790px;
+}
+
+.box3>a {
+    display: block;
+    float: left;
+}
+
+.int {
+    font-size: 20px;
+    position: absolute;
+    top: 1100px;
+}
+
+.introduce-img {
+    position: absolute;
+    top: 1150px;
+    width: 1300px;
+}
+
+#imgs {
+    margin-right: 15px;
+}
+
+.introduce-img a {
+    display: block;
+    float: left;
+}
+
+.imgg {
+    position: relative;
+}
+
+#gray {
+    position: absolute;
+    top: 198px;
+    width: 228px;
+    height: 122px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#gray-text {
+    width: 185px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+#gray-text-first {
+    margin-bottom: 15px;
+}
+
+#big {
+    font-size: 16px;
+}
+
+.bottom-wrap {
+    height: 420px;
+    background-color: white;
+}
+
+.bottom {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#online {
+    font-size: 36px;
+    color: rgb(0, 164, 255);
+    position: absolute;
+    top: 127px;
+    left: 21px;
+}
+
+#little {
+    font-size: 12px;
+    position: absolute;
+    top: 197px;
+    left: 21px;
+}
+
+#load {
+    position: absolute;
+    top: 242px;
+    left: 21px;
+    width: 120px;
+    height: 34px;
+    border: 1px solid rgb(0, 164, 255);
+    background-color: white;
+    color: rgb(0, 164, 255);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.bottom-link {
+    position: absolute;
+    top: 127px;
+    left: 660px;
+}
+
+.bottom a {
+    display: block;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.bottom-link>div {
+    float: left;
+}
+
+#about,
+#new {
+    margin-right: 148px;
+}
+
+#big-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
